@@ -3,6 +3,8 @@
 #include"chunk.h"
 #include"memory.h"
 
+static int START = 100;
+
 void initChunk(Chunk* chunk) {
     chunk->count = 0;
     chunk->capacity = 0;
@@ -29,7 +31,7 @@ void writeChunk(Chunk* chunk, uint8_t byte, int line) {
     }
 
     chunk->code[chunk->count] = byte;
-    chunk->lines[chunk->count] = line;
+    chunk->lines[chunk->count] = START++; // line;
     chunk->count++;
 }
 

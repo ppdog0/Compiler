@@ -1,11 +1,16 @@
-#ifndef chunk_h
-#define chunk_h
+#ifndef CHUNK_H
+#define CHUNK_H
 
 #include"common.h"
 #include"value.h"
 
 typedef enum { // 命令
     OP_CONSTANT,
+    OP_ADD, // +
+    OP_SUBTRACT, // -
+    OP_MULTIPLY, // *
+    OP_DIVIDE, // /
+    OP_NEGATE, // 负数
     OP_RETURN,
 } OpCode;
 
