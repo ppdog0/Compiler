@@ -1,6 +1,6 @@
 #ifndef COMPILE_H
 #define COMPILE_H
 
-void compile(const char *source);
+bool compile(const char *source, Chunk* chunk);
 
 #endif
