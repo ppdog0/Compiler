@@ -236,6 +236,8 @@ Token scanToken() {
     case '.': return makeToken(DOT);
     case '-': return makeToken(MINUS);
     case '+': return makeToken(PLUS);
+    case '*': return makeToken(STAR);
+    case '/': return makeToken(SLASH);
 
     case '!':
         return makeToken(

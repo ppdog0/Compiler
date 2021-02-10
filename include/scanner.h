@@ -28,10 +28,10 @@ typedef enum
     MINUS_MINUS,
     MINUS_EQUAL,
     POINT, // - -- -= ->
-    DIVIDE,
-    DIVIDE_EQUAL, // / /=
-    MULTIPLY,
-    MULTIPLY_EQUAL, // * *=
+    SLASH,
+    SLASH_EQUAL, // / /=
+    STAR,
+    STAR_EQUAL, // * *=
     MOD,
     MOD_EQUAL, // % %=
     BANG,
